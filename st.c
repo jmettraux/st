@@ -1910,7 +1910,9 @@ strhandle(void)
 	case ']': /* OSC -- Operating System Command */
 		switch (par) {
 		case 0:
+			return;
 		case 1:
+			return;
 		case 2:
 			if (narg > 1)
 				xsettitle(strescseq.args[1]);
